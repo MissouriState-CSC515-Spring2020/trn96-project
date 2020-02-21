@@ -3,29 +3,19 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="keywords" content="Mega, Travel, MT, Vacation" />
+    <meta name="keywords" content="picture, this, PT, Pictures" />
     <meta name="viewport" content="width=device-width, initial-scale=2" />
     <title>Picture This</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
-    <link href="reset.css" rel="stylesheet" />
-    <link href="grids.css" rel="stylesheet" />
-    <link href="ptCss.css" rel="stylesheet" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js"></script>
+    <script src="myscript.js"></script>    
 </head>
 
 <body>
-
-    <div class="container">
+    
 
     <header>
-        <img src="Images//ptLogo.png" alt="ptLogo" />
-        <nav class="horizontal">            
-            <ul>
-                <li><a href="ptHome.html">Home</a></li>
-                <li><a href="ptAbout.html">Details</a></li>
-                <li><a href="ptCat.html">Albums</a></li>
-            </ul>
-        </nav>
+        <img src="assets//Images//ptLogo.png" alt="ptLogo" />
     </header>
 
     <article>
@@ -35,7 +25,7 @@
             <div class="col-2-3" id="home">
                 <div class="row">
                     <figure>
-                        <a href="ptAbout.html"><img src="Images//nbPhoto.jpg" alt="" /></a>
+                        <a [routerLink]="['ptAbout']"><img src="assets//Images//nbPhoto.jpg" alt="" /></a>
                         <figcaption>Your recent searched image: </figcaption>
                     </figure>                    
                     <h1>Welcome to Picture This!</h1>
@@ -53,24 +43,24 @@
             <div class="col-1-3" id="categoryList">
                 <h1>Popular Categories</h1>
                 <div class="albumList" id="category01">
-                    <a href="ptAbout.html"><img src="Images//music.jpg" alt="" /></a>
-                    <p><a class="list" href="ptCat.html">Music</a></p>
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//music.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Music</a></p>
                 </div>
                 <div class="albumList" id="category02">
-                    <a href="ptAbout.html"><img src="Images//nature.jpg" alt="" /></a>
-                    <p><a class="list" href="ptCat.html">Nature</a></p>
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//nature.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Nature</a></p>
                 </div>
                 <div class="albumList" id="category03">
-                    <a href="ptAbout.html"><img src="Images//art.jpg" alt="" /></a>
-                    <p><a class="list" href="ptCat.html">Art</a></p>
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//art.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Art</a></p>
                 </div>
                 <div class="albumList" id="category04">
-                    <a href="ptAbout.html"><img src="Images//space.jpg" alt="" /></a>
-                    <p><a class="list" href="ptCat.html">Space</a></p>
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//space.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Space</a></p>
                 </div>
                 <div class="albumList" id="category05">
-                    <a href="ptAbout.html"><img src="Images//fox.jpg" alt="" /></a>
-                    <p><a class="list" href="ptCat.html">Animals</a></p>
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//fox.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Animals</a></p>
                 </div>
             </div>
         </div>
@@ -80,7 +70,7 @@
         Pict Corp.  &#9830; 901 S. National Ave. Springfield, MO 65898 &#9830; email:pictcorp@framethis.net, Tel:111-867-5309
    </footer>
 
-   </div>
+   
 </body>
 
 
