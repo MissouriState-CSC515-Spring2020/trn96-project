@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="picture, this, PT, Pictures" />
+    <meta name="viewport" content="width=device-width, initial-scale=2" />
+    <title>Picture This</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js"></script>
+    <script src="myscript.js"></script>    
+</head>
+
+<body>
+    
+
+    <header>
+        <img src="assets//Images//ptLogo.png" alt="ptLogo" />
+    </header>
+
+    <article>
+        
+        <div class="row">
+            
+            <div class="col-2-3" id="home">
+                <div class="row">
+                    <figure>
+                        <a [routerLink]="['ptAbout']"><img src="assets//Images//nbPhoto.jpg" alt="" /></a>
+                        <figcaption>Your recent searched image: </figcaption>
+                    </figure>                    
+                    <h1>Welcome to Picture This!</h1>
+                    <p>
+                        Here you can store and view your favorite memories! Picture This's goal is to have a safe
+                        and secure place for your personal photos! Take time to upload the best pictures you have to
+                        offer and look around at what other users have to share! There is bound to be a category that
+                        fits your taste in photography. If you have any comments or concerns about our website please
+                        feel free to send us an email with our contact information located at the bottom of the page.
+                        Enjoy you time here at Picture This!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-1-3" id="categoryList">
+                <h1>Popular Categories</h1>
+                <div class="albumList" id="category01">
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//music.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Music</a></p>
+                </div>
+                <div class="albumList" id="category02">
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//nature.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Nature</a></p>
+                </div>
+                <div class="albumList" id="category03">
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//art.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Art</a></p>
+                </div>
+                <div class="albumList" id="category04">
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//space.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Space</a></p>
+                </div>
+                <div class="albumList" id="category05">
+                    <a [routerLink]="['ptAbout']"><img src="assets//Images//fox.jpg" alt="" /></a>
+                    <p><a class="list" [routerLink]="['ptCat']">Animals</a></p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+   <footer>
+        Pict Corp.  &#9830; 901 S. National Ave. Springfield, MO 65898 &#9830; email:pictcorp@framethis.net, Tel:111-867-5309
+   </footer>
+
+   
+</body>
+
+
+</html>
