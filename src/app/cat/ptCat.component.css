@@ -54,7 +54,7 @@ html {
 
     border-radius: 25px;
     background-clip: content-box;
-    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(192, 174, 123));;
+    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(0, 0, 0));;
 
 }
 
@@ -246,7 +246,7 @@ nav.horizontal ul li a {
 
 footer {
    color: white;    
-   background: rgb(0, 67, 252);  
+   background: rgb(31, 34, 41);  
    height: 10px;
    text-align: center;
    font-size: 0.9em; 
