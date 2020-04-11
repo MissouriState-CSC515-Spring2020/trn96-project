@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class ApiService {
 
-  apiKey : string = 'AIzaSyB7x6mqs9bouDck4PNWNGd1EAIg_2G-zOU'
+  apiKey : string = ''
   constructor(private http: HttpClient) { }
   getVideosForChanel(channel, maxResults): Observable<object> {
     let url = 'https://www.googleapis.com/youtube/v3/search?key=' + this.apiKey + '&channelId=' + channel + '&order=date&part=snippet &type=video,id&maxResults=' + maxResults
