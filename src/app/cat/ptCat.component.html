@@ -12,22 +12,29 @@
 
    
     <header>
-        <img src="assets//Images//ptLogo.png" alt="ptLogo" />
+        <img src="assets//Images//unus.jpg" alt="ptLogo" />
     </header>
 
     <article>
-        <h1>Photo Album Categories</h1>
-        <ul class="album">
-            <li class="album"><a [routerLink]="['ptCat']">Animals</a></li>
-            <li class="album"><a [routerLink]="['ptCat']">Art</a></li>
-            <li class="album"><a [routerLink]="['ptCat']">Music</a></li>
-            <li class="album"><a [routerLink]="['ptCat']">Nature</a></li>
-            <li class="album"><a [routerLink]="['ptCat']">Space</a></li>
-        </ul>
+        <h1>Recent Uploaded Videos</h1>
+    
+        <div *ngFor="let video of videos" class="album">
+            <div class="card border-0 shadow vh-50">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+            <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            <div class="card-body text-center">
+            <h5 class="card-title mb-0">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}">{{video.snippet.title}}
+            </a></h5>
+            </div>
+            </div>
+            </div>
+
     </article>
+    
 
   <footer>
-        Pict Corp.  &#9830; 901 S. National Ave. Springfield, MO 65898 &#9830; email:pictcorp@framethis.net, Tel:111-867-5309
+        UA FanSite.  &#9830; 901 S. National Ave. Springfield, MO 65898 &#9830; email:UAFan@UnasAnnusFan.net, Tel:111-867-5309
   </footer>
 
 </body>

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PtHomeComponent } from './home/ptHome.component';
 import { PtAboutComponent } from './about/ptAbout.component';
 import { PtCatComponent } from './cat/ptCat.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { PtCatComponent } from './cat/ptCat.component';
       { path: '', component: PtHomeComponent },
       { path: 'ptAbout', component: PtAboutComponent },
       { path: 'ptCat', component: PtCatComponent },
-    ])
+    ]),
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,

@@ -12,7 +12,7 @@
 
     
     <header>
-        <img src="assets//Images//ptLogo.png" alt="ptLogo" />
+        <img src="assets//Images//unus.jpg" alt="ptLogo" />
     </header>
 
     <article>
@@ -20,29 +20,26 @@
         
             
         <div class="Abt" id="home">
+
+            <div *ngFor="let video of videos" class="album">
                 
             <figure>
-				<a [routerLink]="['ptAbout']"><img src="assets//Images//nbPhoto.jpg" alt="Nickelback" /></a>
-                <figcaption>nbPhoto.jpg</figcaption>
+            
+                <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank"><img [src]="video.snippet.thumbnails.medium.url" alt="" /></a>
+                
+                <figcaption>Unus Annus</figcaption>
             </figure>                    
-            <h1> Nickelback - Photograph </h1>
+            <h1> {{video.snippet.title}} </h1>
                 <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Placerat orci nulla pellentesque dignissim enim sit amet venenatis 
-                        urna. Nulla pharetra diam sit amet nisl suscipit. Diam vulputate ut pharetra sit amet. Est ultricies 
-                        integer quis auctor elit sed vulputate mi sit. Malesuada fames ac turpis egestas. Aenean et tortor 
-                        at risus viverra adipiscing at in tellus. Et egestas quis ipsum suspendisse ultrices gravida dictum. 
-                        Ac placerat vestibulum lectus mauris ultrices eros in cursus. Sociis natoque penatibus et magnis dis 
-                        parturient montes. Ornare arcu dui vivamus arcu felis. Faucibus turpis in eu mi. Ultricies mi eget 
-                        mauris pharetra et. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Aliquet 
-                        sagittis id consectetur purus ut faucibus pulvinar elementum.
+                    {{video.snippet.description}}
                 </p>
+            </div>
         </div>
                 
     </article>
 
    <footer>
-		Pict Corp.  &#9830; 901 S. National Ave. Springfield, MO 65898 &#9830; email:pictcorp@framethis.net, Tel:111-867-5309
+    UA FanSite.  &#9830; 901 S. National Ave. Springfield, MO 65898 &#9830; email:UAFan@UnasAnnusFan.net, Tel:111-867-5309
    </footer>
 
 
